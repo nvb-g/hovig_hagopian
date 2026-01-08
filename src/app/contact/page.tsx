@@ -16,7 +16,7 @@ export default async function Page() {
       </div>
       <div className="w__contact_mention">
         <a
-          href={"https://nicolas-giannantonio.fr"}
+          href={"https://www.nicolasgiannantonio.com"}
           target={"_blank"}
           className={"contact_mention_t"}
         >
