@@ -3,7 +3,8 @@ import ContactInformations from "@/components/Contact/ContactInformations";
 import { client } from "@/lib/sanity/client";
 import { CONTACT_QUERY } from "@/lib/queries";
 
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export default async function Page() {
   const data = await client.fetch(CONTACT_QUERY);

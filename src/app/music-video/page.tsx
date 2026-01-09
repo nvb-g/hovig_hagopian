@@ -3,7 +3,8 @@ import { PROJECTS_QUERY } from "@/lib/queries";
 import { client } from "@/lib/sanity/client";
 import { extractVimeoIdAndToken, getVideoLink } from "@/lib/vimeo";
 
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export default async function Home() {
   const selected = await client.fetch(PROJECTS_QUERY, { projects: "clip" });
