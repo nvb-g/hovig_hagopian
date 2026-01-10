@@ -4,7 +4,7 @@ import { client } from "@/lib/sanity/client";
 import { CONTACT_QUERY } from "@/lib/queries";
 
 // export const dynamic = "force-dynamic";
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export default async function Page() {
   const data = await client.fetch(CONTACT_QUERY);

@@ -3,7 +3,7 @@ import { client } from "@/lib/sanity/client";
 import AllProjects from "@/components/Projects/AllProjects";
 
 // export const dynamic = "force-dynamic";
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export default async function Home() {
   const selected = await client.fetch(ALL_PROJECT_QUERY);

@@ -3,7 +3,7 @@ import { PROJECTS_QUERY } from "@/lib/queries";
 import { client } from "@/lib/sanity/client";
 import { extractVimeoIdAndToken, getVideoLink } from "@/lib/vimeo";
 
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export default async function Home() {
   const selected = await client.fetch(PROJECTS_QUERY, {
